@@ -1,0 +1,287 @@
+html {
+    font-size: 62.5%;
+    font-family: chirp-extended;
+}
+.header{
+    margin: 2rem;
+}
+.header--icon{
+    margin-bottom: 5.2rem;
+}
+.twitter-chiquito{
+    width: 3rem;
+}
+.twitter-chiquito path{
+    fill: var(--color-brand);
+}
+.header--icon-white{
+    color: #fff;
+    font-size: 30rem;
+}
+.all-container{
+    width: 100vw;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.image--background{
+    width: 50%;
+}
+.text-section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.main--titles{
+    font-family: chirp-extended;
+    font-weight: 700;
+
+}
+.titles--title{
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    opacity: .89;
+    margin-bottom: 4rem;
+}
+h1.titles--title{
+    font-size: 5.7rem;
+    line-height: 7.4rem;
+}
+h2.titles--title{
+    width: 35rem;
+    font-size: 2.7rem;
+    line-height: 33px;
+    margin-bottom: 3rem;
+}
+.main--create-accout{
+    max-width: 300px;
+    width: 45%;
+}
+.button{
+    width: 29rem;
+    height: 3.3rem;
+    display: inline-block;
+    margin: .7rem auto;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chirp;
+    font-weight: 700;
+    font-size: 1.3rem;
+    opacity: .85;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+}
+.button span{
+    margin-right: 1.5rem;
+}
+.button--withe{
+    border: 1px solid var(--gray);
+    background: white;
+}
+.button--withe:hover{
+    background: rgb(212, 212, 212);
+}
+.button--blue{
+    background: var(--color-brand);
+    color: white;
+    height: 3.7rem;
+    margin-bottom: .8rem;
+}
+.button--sign-in{
+    color: var(--color-brand );
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+.button--sign-in:hover{
+    background-color: #1d9cf033;
+}
+.login--lines{
+    width: 30rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.login--lines div{
+    width: 45%;
+    border-top: 1px solid rgba(128, 128, 128, 0.274);
+}
+.login--lines span{
+    font-size: 1.5rem;
+}
+.login--legal-cookies{
+    width: 29rem;
+    opacity: .8;
+    font-size: .8rem;
+    margin-left: 1.8rem;
+    margin-bottom: 5rem;
+}
+.text--link{
+    color: var(--color-brand);
+}
+.main--subtitle-3{
+    font-size: 1.4rem;
+    opacity: .8;
+    margin-bottom: 1.7rem;
+}
+.image--background{
+    width: 100%;
+    height: 45vh;
+    background-color: var(--color-brand);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.image--background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.footer--container{
+    height: auto;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+}
+.twitter{
+    box-sizing: content-box;
+    fill: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.twitter-container{
+    width: 50rem;
+    height: 50%;
+    position: absolute;
+}
+.footer--items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer--container li {
+    font-size: 1.4rem;
+    margin: .5rem .8rem;
+}
+.footer--items li a{
+    color: gray;
+}
+@media (min-width:900px) {
+    .image--background{
+        width: 50%;
+        height: 100vh;
+        max-height: 700px;
+    }
+    .header--icon-white{
+        font-size: calc(30rem + 1vw);
+    }
+    .text-section{
+        width: 50%;
+    }
+    h2.titles--title{
+        width: 40rem;
+        font-size: 2.7rem;
+        line-height: 33px;
+        margin-bottom: 3rem;
+    }
+    .all-container{
+        padding-bottom: 0;
+    }
+    .login--legal-cookies{
+        margin-bottom: 4rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: black;
+    }
+    .button{
+        color: black;
+    }
+    .button--blue{
+        color: #fff;
+    }
+    .button--sign-in{
+        background-color: black;
+        color: var(--color-brand);
+    }
+    .twitter-chiquito path{
+        fill: #fff;
+    }
+}
+@media (max-width:425px) {
+h1.titles--title {
+    font-size: 5rem;
+    line-height: 6rem;
+}
+h2.titles--title {
+    width: 26rem;
+    font-size: 2rem;
+    line-height: 18px;
+}
+.button {
+    width: 27rem;
+}
+.login--lines {
+    width: 26rem;
+}
+.login--legal-cookies {
+    width: 25rem;
+}
+.twitter-container{
+    width: 28rem;
+}
+}
+
+@font-face {
+    font-family: chirp-extended;
+    src: url(../../fonts/chirp/chirp-extended-heavy-web.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: chirp;
+    src: url(../../fonts/chirp/chirp-bold-web.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: chirp;
+    src: url(../../fonts/chirp/chirp-regular-web.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Google Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Google Sans Medium"),
+        url("../../fonts/sans/ProductSans-Medium.woff") format("woff");
+}
+
+:root{
+    --color-brand: #1d9bf0;
+    --gray: rgba(128, 128, 128, 0.473);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "Roboto", sans-serif ;
+}
